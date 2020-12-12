@@ -6,3 +6,9 @@ Nowadays, students ranging from bachelors to more advanced degrees often face a 
 **Introducing---PyPyYa!**
 
 ![alt text](https://github.com/yunglinchang/PyPyYa/blob/master/demo.jpg?raw=true)
+
+## The Team---Group 10:
+* **CEO**: Jack Chang   |  yunglinc@andrew.cmu.edu
+* **COO**: Crystal Chen |  yiwenc2@andrew.cmu.edu 
+* **CTO**: Yumin Chen   |  yuminc@andrew.cmu.edu 
+* **CFO**: Siqin Deng   |  siqideng@andrew.cmu.edu
