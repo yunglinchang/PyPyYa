@@ -1,9 +1,7 @@
-from jobindustry_GUI import *
+from jobindustry import *
 from Course_GUI import *
-import os
-import sys
 
-# sys.path.append(os.path.abspath(os.path.join('.', 'data')))
+
 
 # %% Exit the search window
 def exit_program(root):
@@ -13,9 +11,8 @@ def exit_program(root):
 def searchConduct(root,key_word):
     # Get the input key word
     key = key_word.get()
-    print('', os.getcwd(), os.path.abspath(os.path.join('.', 'data')))
-    p1= os.path.abspath(os.path.join('.', 'data'))
-    p2='./data/course_clean.csv'
+    p1='/CSV_file/'
+    p2='../course_clean.csv'
     other_sw = ['race', 'color', 'gender','disability', 'sexual', 'religion', 'attorney', 'status', 'employment', 'opportunities', 'consideration', 'equal']
     # Declare a jobindustry object
     j = jobindustry(p1, key)
@@ -40,14 +37,10 @@ def searchConduct(root,key_word):
 # %% main window layout
 def window_layout(root):
      # Create and place the title line
-    # frame_first_center=Frame(root,width=700,height=30)
-    # frame_first_center.grid(row=0, column=0,columnspan=10,padx=5)
     theme = tk.Label(root,text='PyPyYa',fg="orange",font=("Times New Roman",16,"bold"))
     theme.place(x=300,y=5)
     
     # Create and place the search line
-    #frame_second_center=Frame(root,width=700,height =30)
-    #frame_second_center.grid(row=1, column=0,columnspan=20,padx=5)
     tk.Label(root, text='Key word:',font=("Times New Roman",12)).place(x=5,y=30)
     key = tk.StringVar()
     entry_key_word = tk.Entry(root, width=50,textvariable=key)
@@ -62,8 +55,6 @@ def window_layout(root):
                          command=lambda:exit_program(window))
     btn_exit.place(x=500,y=30)
     
-    #frame_first_center.grid_propagate(0)
-    #frame_second_center.grid_propagate(0)
     
 # %% 
 if __name__ == "__main__":
@@ -73,4 +64,3 @@ if __name__ == "__main__":
     warnings.filterwarnings('ignore')
     window_layout(window)   
     window.mainloop()
-
