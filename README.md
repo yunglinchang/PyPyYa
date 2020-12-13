@@ -6,7 +6,7 @@ Nowadays, students ranging from bachelors to more advanced degrees often face a 
 **Introducing--PyPyYa!**
 
 ## Demo
-![alt text](https://github.com/yunglinchang/PyPyYa/blob/master/demo/demo.jpg?raw=true)
+![alt text](https://github.com/yunglinchang/PyPyYa/blob/master/demo.jpg?raw=true)
 
 ## The Team--Group 10:
 * **CEO**: Jack Chang   |  yunglinc@andrew.cmu.edu
@@ -18,6 +18,9 @@ Nowadays, students ranging from bachelors to more advanced degrees often face a 
 ```
 .
 ├── README.md
+├── .DS_Store
+├── .gitattributes
+├── LICENSE
 ├── data
 │   ├── DataAnalyst.csv           
 │   ├── DataEngineer.csv             
@@ -45,9 +48,23 @@ cd PyPyYa
 ```
 pip install –r requirements.txt
 ```
+Note: The version of the dependencies used are recorded in the requirements.txt document.
+* beautifulsoup4==4.8.0
+* matplotlib==3.1.3
+* nltk==3.4.5
+* numpy==1.18.5
+* pandas==0.25.3
+* Pillow==6.2.0
+* regex==2020.11.13
+* seaborn==0.10.1
+* selenium==3.141.0
+* wordcloud==1.7.0
+
+If pip install does not work for you, you could try utilizing the conda installation with Anaconda.
+```
+conda install --yes --file requirements.txt
+```
 4. Run the Python file in terminal
 ```
-python3 ./scripts/.py
-python3 ./scripts/.py
-python3 ./scripts/.py
+python3 ./scripts/main.py
 ```

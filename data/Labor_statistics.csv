@@ -1,0 +1,104 @@
+Industry Title,Industry Type,2019 Employment,2019 Percent of Occupation,2019 Percent of Industry,Projected 2029 Employment,Projected 2029 Percent of Occupation,Projected 2029 Percent of Industry,"Employment Change, 2019-2029","Employment Percent Change,2019-2029",,
+Total employment,Summary,33.2,100.0,0.0,43.4,100.0,0.0,10.3,30.9,,0
+Self-employed workers,Line Item,1.0,3.0,0.0,1.1,2.4,0.0,0.1,8.0,2,1
+Total wage and salary employment,Summary,32.2,97.0,0.0,42.4,97.6,0.0,10.2,31.6,3,1
+"Mining, quarrying, and oil and gas extraction",Summary,0.1,0.4,0.0,0.1,0.3,0.0,0.0,4.3,12,2
+Oil and gas extraction,Line Item,0.1,0.4,0.1,0.1,0.3,0.1,0.0,4.3,13,3
+Utilities,Summary,0.1,0.2,0.0,0.1,0.1,0.0,0.0,7.1,19,2
+Utilities,Summary,0.1,0.2,0.0,0.1,0.1,0.0,0.0,7.1,20,3
+Chemical manufacturing,Summary,0.7,2.1,0.1,0.9,2.1,0.1,0.2,25.1,89,3
+Pharmaceutical and medicine manufacturing,Line Item,0.7,2.0,0.2,0.8,1.9,0.3,0.2,25.7,90,4
+"Chemical manufacturing (3251,2,3,9)",Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,18.9,92,4
+Machinery manufacturing,Summary,0.1,0.3,0.0,0.1,0.3,0.0,0.0,23.9,110,3
+"Engine, turbine, and power transmission equipment manufacturing",Line Item,0.1,0.3,0.1,0.1,0.3,0.1,0.0,24.2,113,4
+Computer and electronic product manufacturing,Summary,0.2,0.7,0.0,0.3,0.7,0.0,0.1,21.5,115,3
+Transportation equipment manufacturing,Summary,0.2,0.5,0.0,0.2,0.5,0.0,0.0,30.0,127,3
+Motor vehicle manufacturing,Line Item,0.1,0.3,0.0,0.1,0.3,0.1,0.0,32.8,128,4
+Miscellaneous manufacturing,Summary,0.1,0.2,0.0,0.1,0.2,0.0,0.0,23.9,138,3
+Medical equipment and supplies manufacturing,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,23.8,139,4
+Wholesale trade,Summary,0.9,2.8,0.0,1.1,2.5,0.0,0.2,18.5,143,2
+"Merchant wholesalers, durable goods",Summary,0.6,1.9,0.0,0.7,1.7,0.0,0.1,16.4,144,3
+Professional and commercial equipment and supplies merchant wholesalers,Line Item,0.4,1.3,0.1,0.5,1.1,0.1,0.1,15.2,146,4
+"Merchant wholesalers, nondurable goods",Summary,0.2,0.6,0.0,0.3,0.6,0.0,0.0,20.6,151,3
+"Merchant wholesalers, nondurable goods (4242,6)",Line Item,0.2,0.5,0.0,0.2,0.4,0.1,0.0,20.8,154,4
+Wholesale electronic markets and agents and brokers,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,32.7,157,3
+Retail trade,Summary,0.4,1.2,0.0,0.6,1.4,0.0,0.2,50.4,158,2
+"Retail trade, except motor vehicle and parts dealers, food and beverage stores, and general merchandise stores",Summary,0.4,1.1,0.0,0.5,1.3,0.0,0.2,53.2,167,3
+Nonstore retailers,Summary,0.3,1.0,0.1,0.5,1.2,0.1,0.2,54.8,193,4
+Electronic shopping and mail-order houses,Line Item,0.3,1.0,0.1,0.5,1.2,0.1,0.2,55.6,194,5
+Transportation and warehousing,Summary,0.2,0.7,0.0,0.3,0.7,0.0,0.1,25.9,197,2
+Scenic and sightseeing transportation and support activities for transportation,Summary,0.1,0.3,0.0,0.1,0.3,0.0,0.0,24.4,217,3
+Support activities for transportation,Summary,0.1,0.3,0.0,0.1,0.3,0.0,0.0,24.4,222,4
+Freight transportation arrangement,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,24.0,227,5
+Information,Summary,2.0,6.0,0.1,2.5,5.8,0.1,0.5,27.3,233,2
+Publishing industries (except Internet),Summary,0.6,1.7,0.1,0.8,1.8,0.1,0.2,35.6,234,3
+"Newspaper, periodical, book, and directory publishers",Summary,0.1,0.2,0.0,0.1,0.1,0.0,0.0,-14.3,235,4
+Software publishers,Line Item,0.5,1.5,0.1,0.7,1.7,0.1,0.2,41.9,238,4
+Broadcasting (except Internet),Summary,0.1,0.3,0.0,0.1,0.2,0.0,0.0,-25.7,244,3
+Cable and other subscription programming,Line Item,0.1,0.3,0.2,0.1,0.2,0.2,0.0,-26.4,248,4
+Telecommunications,Line Item,0.3,0.8,0.0,0.3,0.6,0.0,0.0,-2.2,249,3
+"Data processing, hosting, and related services",Line Item,0.3,0.9,0.1,0.4,0.9,0.1,0.1,35.0,250,3
+Other information services,Line Item,0.7,2.2,0.2,1.0,2.3,0.3,0.3,35.3,251,3
+"Monetary authorities, credit intermediation, and related activities",Summary,1.9,5.8,0.1,2.4,5.6,0.1,0.5,25.6,253,3
+Credit intermediation and related activities,Summary,1.9,5.7,0.1,2.4,5.5,0.1,0.5,25.6,255,4
+Nondepository credit intermediation,Summary,0.4,1.2,0.1,0.5,1.2,0.1,0.1,29.4,256,5
+Direct health and medical insurance carriers,Line Item,0.7,2.2,0.1,1.0,2.3,0.2,0.3,36.8,262,5
+"Direct insurance (except life, health, and medical) carriers",Line Item,0.9,2.8,0.1,1.1,2.5,0.2,0.2,19.6,263,5
+Insurance agencies and brokerages,Line Item,0.2,0.7,0.0,0.3,0.7,0.0,0.1,31.1,266,5
+Other insurance related activities,Line Item,0.2,0.6,0.1,0.2,0.6,0.1,0.1,30.4,267,5
+"Securities, commodity contracts, fund, trusts and other financial investments and vehicles and related activities",Summary,0.5,1.6,0.1,0.7,1.5,0.1,0.1,24.0,268,3
+"Securities, commodity contracts, and other financial investments and related activities",Line Item,0.5,1.5,0.1,0.6,1.4,0.1,0.1,23.0,269,4
+Real estate and rental and leasing,Summary,0.1,0.4,0.0,0.2,0.4,0.0,0.0,20.1,273,2
+Real estate,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,21.2,274,3
+Rental and leasing services,Summary,0.1,0.2,0.0,0.1,0.2,0.0,0.0,19.1,275,3
+"Professional, scientific, and technical services",Summary,11.7,35.2,0.1,16.5,38.1,0.2,4.9,41.9,279,2
+"Professional, scientific, and technical services",Summary,11.7,35.2,0.1,16.5,38.1,0.2,4.9,41.9,280,3
+Legal services,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,23.0,281,4
+"Accounting, tax preparation, bookkeeping, and payroll services",Line Item,0.7,2.2,0.1,0.9,2.1,0.1,0.2,24.3,282,4
+"Architectural, engineering, and related services",Summary,0.7,2.2,0.0,0.9,2.0,0.1,0.2,21.0,283,4
+Engineering services,Line Item,0.7,2.1,0.1,0.8,1.9,0.1,0.1,20.9,285,5
+Testing laboratories,Line Item,0.1,0.2,0.0,0.1,0.1,0.0,0.0,21.5,287,5
+Computer systems design and related services,Line Item,4.5,13.5,0.2,6.7,15.4,0.2,2.2,48.7,289,4
+"Management, scientific, and technical consulting services",Line Item,3.7,11.2,0.2,5.4,12.5,0.3,1.7,46.7,290,4
+Scientific research and development services,Summary,1.2,3.5,0.2,1.4,3.3,0.2,0.3,24.4,291,4
+"Research and development in the physical, engineering, and life sciences",Line Item,1.1,3.3,0.2,1.4,3.1,0.2,0.3,24.5,292,5
+Research and development in the social sciences and humanities,Line Item,0.1,0.2,0.1,0.1,0.2,0.1,0.0,22.6,293,5
+"Advertising, public relations, and related services",Line Item,0.2,0.7,0.0,0.3,0.6,0.1,0.0,18.7,294,4
+"Other professional, scientific, and technical services",Summary,0.6,1.7,0.1,0.9,2.0,0.1,0.3,52.1,295,4
+Management of companies and enterprises,Summary,3.7,11.1,0.2,4.7,10.8,0.2,1.0,27.8,299,2
+Management of companies and enterprises,Line Item,3.7,11.1,0.2,4.7,10.8,0.2,1.0,27.8,300,3
+Administrative and support and waste management and remediation services,Summary,1.6,4.8,0.0,2.1,4.8,0.0,0.5,29.3,301,2
+Administrative and support services,Summary,1.6,4.8,0.0,2.1,4.8,0.0,0.5,29.3,302,3
+Employment services,Summary,0.8,2.3,0.0,0.8,2.0,0.0,0.1,12.9,305,4
+Temporary help services,Line Item,0.2,0.7,0.0,0.3,0.7,0.0,0.1,23.2,306,5
+Business support services,Line Item,0.2,0.6,0.0,0.3,0.6,0.0,0.1,46.3,308,4
+"Educational services; state, local, and private",Summary,1.3,3.9,0.0,1.6,3.8,0.0,0.4,27.8,322,2
+"Educational services; state, local, and private",Summary,1.3,3.9,0.0,1.6,3.8,0.0,0.4,27.8,323,3
+"Elementary and secondary schools; state, local, and private",Summary,0.1,0.3,0.0,0.1,0.3,0.0,0.0,27.8,324,4
+Elementary and secondary schools; local,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,21.4,327,5
+"Junior colleges, colleges, universities, and professional schools; state, local, and private",Summary,1.0,3.0,0.0,1.2,2.8,0.0,0.2,24.2,328,4
+"Colleges, universities, and professional schools; state, local, and private",Summary,0.9,2.8,0.0,1.2,2.7,0.0,0.2,24.6,333,5
+"Colleges, universities, and professional schools; private",Line Item,0.3,1.0,0.0,0.4,1.0,0.0,0.1,30.2,334,6
+"Colleges, universities, and professional schools; state",Line Item,0.6,1.9,0.0,0.8,1.8,0.0,0.1,21.8,335,6
+"Other educational services; state, local, and private",Summary,0.2,0.5,0.0,0.3,0.6,0.0,0.1,47.3,337,4
+"Educational support services; state, local, and private",Summary,0.1,0.3,0.1,0.2,0.4,0.1,0.1,56.0,350,5
+Educational support services; private,Line Item,0.1,0.3,0.1,0.2,0.4,0.1,0.1,56.4,351,6
+Ambulatory healthcare services,Summary,0.3,1.1,0.0,0.5,1.2,0.0,0.2,43.1,355,3
+Offices of physicians,Line Item,0.1,0.3,0.0,0.1,0.3,0.0,0.0,29.0,356,4
+Outpatient care centers,Summary,0.1,0.3,0.0,0.2,0.4,0.0,0.1,54.7,364,4
+Medical and diagnostic laboratories,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,36.4,367,4
+Other ambulatory healthcare services,Summary,0.1,0.2,0.0,0.1,0.2,0.0,0.0,51.9,369,4
+"General medical and surgical hospitals; state, local, and private",Summary,0.6,1.8,0.0,0.7,1.7,0.0,0.1,22.3,373,4
+General medical and surgical hospitals; private,Line Item,0.5,1.5,0.0,0.6,1.4,0.0,0.1,21.9,374,5
+General medical and surgical hospitals; local,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,23.8,376,5
+"Arts, entertainment, and recreation",Summary,0.1,0.2,0.0,0.1,0.2,0.0,0.0,33.1,400,2
+Other services (except public administration),Summary,0.2,0.6,0.0,0.3,0.7,0.0,0.1,39.3,430,2
+"Religious, grantmaking, civic, professional, and similar organizations",Summary,0.2,0.5,0.0,0.2,0.6,0.0,0.1,39.3,444,3
+Grantmaking and giving services and social advocacy organizations,Summary,0.1,0.3,0.0,0.1,0.3,0.0,0.0,51.6,446,4
+Grantmaking and giving services,Line Item,0.1,0.2,0.0,0.1,0.2,0.0,0.0,52.6,447,5
+"Civic, social, professional, and similar organizations",Summary,0.1,0.2,0.0,0.1,0.2,0.0,0.0,27.8,449,4
+"Business, professional, labor, political, and similar organizations",Summary,0.1,0.2,0.0,0.1,0.2,0.0,0.0,27.8,451,5
+Government,Summary,2.1,6.4,0.0,2.5,5.8,0.0,0.4,19.5,455,2
+Federal government,Summary,0.3,1.0,0.0,0.4,0.9,0.0,0.0,14.3,456,3
+"Federal government, excluding postal service",Line Item,0.3,1.0,0.0,0.4,0.9,0.0,0.0,14.3,458,4
+"Local government, excluding education and hospitals",Line Item,0.2,0.5,0.0,0.2,0.5,0.0,0.0,26.8,460,3
