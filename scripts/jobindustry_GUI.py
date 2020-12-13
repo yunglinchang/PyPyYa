@@ -22,27 +22,23 @@ import warnings
 
 from PIL import Image
 from PIL import ImageTk
-import tkinter as tk
-from tkinter import ttk
-from tkinter import Canvas
-from tkinter import Frame
-from tkinter import Scrollbar
 
 class jobindustry:
-    def __init__(self, data_path, input_word):
+    def __init__(self, data_path, input_word,root):
         self.data_path = data_path
         self.input_word = input_word
+        self.root=root
     
     # Read job and industry data
     def read_data(self):
-        file_names = [f for f in os.listdir(str(self.data_path)) if (f.endswith('.csv') and f.startswith('Data'))]
+        file_names = [f for f in os.listdir(str(self.data_path)) if f.endswith('.csv')]
         df = pd.read_csv(file_names[0]).iloc[:,2:]
         for f in file_names[1:]:
             df_append = pd.read_csv(str(self.data_path + f))
             df = df.append(df_append, ignore_index=True)
         
-        if os.path.isfile('./data/Labor_statistics.csv'):
-            table_= pd.read_csv('./data/Labor_statistics.csv')
+        if os.path.isfile('Labor_statistics.csv'):
+            table_= pd.read_csv('./Labor_statistics.csv')
         
         # If the labor data do not exist, crawl it
         else:    
@@ -88,7 +84,7 @@ class jobindustry:
             header = ['Industry Title','Industry Type','2019 Employment','2019 Percent of Occupation','2019 Percent of Industry',
             'Projected 2029 Employment','Projected 2029 Percent of Occupation','Projected 2029 Percent of Industry','Employment Change, 2019-2029','Employment Percent Change,2019-2029','','']
 
-            table_.to_csv('./data/Labor_statistics.csv', index= False, header= header)
+            table_.to_csv(r'/Users/crystal_chen/Labor_statistics.csv', index= False, header= header)
 
         # print(table_)
         # print(df)
@@ -200,10 +196,8 @@ class jobindustry:
     # Create the word cloud
     @staticmethod
     def wordcloud_ngrams(root, other_stopwords: list=[], bg_color: str='white'):
-        graphTitle1 = Frame(root,width=350,height=16)
-        graphTitle1.grid(row=2,column=0,rowspan=1,columnspan=5)
-        label1 = tk.Label(graphTitle1,text='Word Cloud')
-        label1.grid(row=2,column=0,rowspan = 1,columnspan=5)
+        label1 = tk.Label(root,text='Word Cloud')
+        label1.place(x=10,y=65)
         
         # If the word cloud picture already exists
         if os.path.isfile('Figure 2020-12-12 220447.png'):
