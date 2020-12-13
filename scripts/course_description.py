@@ -16,7 +16,7 @@ def course_desc():
     driver.find_element_by_xpath("/html/body/div/div[2]/form/div[3]/div/div/button[1]").click()
     tables = driver.find_elements_by_id("search-results-table")
     
-    input_path = './course_description_1.txt'
+    input_path = './data/temp/course_description_1.txt'
     f = open(input_path,"a+")
     
     # Crawl course description through full x_path matching

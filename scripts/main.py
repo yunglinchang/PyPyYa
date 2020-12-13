@@ -11,8 +11,8 @@ def searchConduct(root,key_word):
     # Get the input key word
     key = key_word.get()
     
-    p1=r'./CSV_file/'
-    p2='./course_clean.csv'
+    p1=r'./data/'
+    p2='./data/course_clean.csv'
     other_sw = ['race', 'color', 'gender','disability', 'sexual', 'religion', 'attorney', 'status', 'employment', 'opportunities', 'consideration', 'equal']
     # Declare a jobindustry object
     j = jobindustry(p1, key)
@@ -66,7 +66,7 @@ def window_layout(root):
 if __name__ == "__main__":
     window = tk.Tk()
     window.title("PyPyYa")
-    window.geometry("735x650")
+    window.attributes('-fullscreen', True)
     warnings.filterwarnings('ignore')
     window_layout(window)   
     window.mainloop()
