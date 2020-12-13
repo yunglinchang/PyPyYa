@@ -72,7 +72,9 @@ conda install --yes --file requirements.txt
 python3 ./scripts/main.py
 ```
 
-Data:
+/data/
+
+## Data Source:
 * DataAnalyst.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
 * DataEngineer.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
 * DataScientist.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
