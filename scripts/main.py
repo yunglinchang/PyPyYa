@@ -11,11 +11,11 @@ def exit_program(root):
 def searchConduct(root,key_word):
     # Get the input key word
     key = key_word.get()
-    p1='/data/'
-    p2='./data/course_clean.csv'
+    p1=r'./CSV_file/'
+    p2='./course_clean.csv'
     other_sw = ['race', 'color', 'gender','disability', 'sexual', 'religion', 'attorney', 'status', 'employment', 'opportunities', 'consideration', 'equal']
     # Declare a jobindustry object
-    j = jobindustry(root, p1, key)
+    j = jobindustry(p1, key)
     df,table_ = j.read_data()
     j.process_data(df)
     new_df= j.map_industry_return_df(df,table_)
@@ -64,3 +64,4 @@ if __name__ == "__main__":
     warnings.filterwarnings('ignore')
     window_layout(window)   
     window.mainloop()
+
