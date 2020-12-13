@@ -1,4 +1,4 @@
-from jobindustry import *
+from jobindustry_GUI import *
 from Course_GUI import *
 
 
@@ -11,11 +11,11 @@ def exit_program(root):
 def searchConduct(root,key_word):
     # Get the input key word
     key = key_word.get()
-    p1='/CSV_file/'
-    p2='../course_clean.csv'
+    p1='/data/'
+    p2='./data/course_clean.csv'
     other_sw = ['race', 'color', 'gender','disability', 'sexual', 'religion', 'attorney', 'status', 'employment', 'opportunities', 'consideration', 'equal']
     # Declare a jobindustry object
-    j = jobindustry(p1, key)
+    j = jobindustry(root, p1, key)
     df,table_ = j.read_data()
     j.process_data(df)
     new_df= j.map_industry_return_df(df,table_)
