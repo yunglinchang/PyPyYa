@@ -3,7 +3,7 @@ from Course_GUI import *
 import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join('.', 'data')))
+# sys.path.append(os.path.abspath(os.path.join('.', 'data')))
 
 # %% Exit the search window
 def exit_program(root):
@@ -13,7 +13,7 @@ def exit_program(root):
 def searchConduct(root,key_word):
     # Get the input key word
     key = key_word.get()
-    
+    print('', os.getcwd(), os.path.abspath(os.path.join('.', 'data')))
     p1= os.path.abspath(os.path.join('.', 'data'))
     p2='./data/course_clean.csv'
     other_sw = ['race', 'color', 'gender','disability', 'sexual', 'religion', 'attorney', 'status', 'employment', 'opportunities', 'consideration', 'equal']

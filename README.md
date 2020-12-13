@@ -7,6 +7,8 @@ Nowadays, students ranging from bachelors to more advanced degrees often face a 
 
 ## Demo
 Video: https://youtu.be/SyYz-tfTMEI
+
+
 ![alt text](https://github.com/yunglinchang/PyPyYa/blob/master/demo/demo.jpg?raw=true)
 
 ## The Team--Group 10:
@@ -73,7 +75,6 @@ conda install --yes --file requirements.txt
 python3 ./scripts/main.py
 ```
 
-/data/
 
 ## Data Source:
 * **DataAnalyst.csv**: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
