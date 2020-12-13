@@ -1,6 +1,9 @@
 from jobindustry_GUI import *
 from Course_GUI import *
+import os
+import sys
 
+sys.path.append(os.path.abspath(os.path.join('.', 'data')))
 
 # %% Exit the search window
 def exit_program(root):
@@ -11,7 +14,7 @@ def searchConduct(root,key_word):
     # Get the input key word
     key = key_word.get()
     
-    p1=r'./data/'
+    p1= os.path.abspath(os.path.join('.', 'data'))
     p2='./data/course_clean.csv'
     other_sw = ['race', 'color', 'gender','disability', 'sexual', 'religion', 'attorney', 'status', 'employment', 'opportunities', 'consideration', 'equal']
     # Declare a jobindustry object
@@ -37,30 +40,30 @@ def searchConduct(root,key_word):
 # %% main window layout
 def window_layout(root):
      # Create and place the title line
-    frame_first_center=Frame(root,width=700,height=30)
-    frame_first_center.grid(row=0, column=0,columnspan=10,padx=5)
-    theme = tk.Label(frame_first_center,text='PyPyYa',fg="orange",font=("Times New Roman",16,"bold"))
+    # frame_first_center=Frame(root,width=700,height=30)
+    # frame_first_center.grid(row=0, column=0,columnspan=10,padx=5)
+    theme = tk.Label(root,text='PyPyYa',fg="orange",font=("Times New Roman",16,"bold"))
     theme.place(x=300,y=5)
     
     # Create and place the search line
-    frame_second_center=Frame(root,width=700,height =30)
-    frame_second_center.grid(row=1, column=0,columnspan=20,padx=5)
-    tk.Label(frame_second_center, text='Key word:',font=("Times New Roman",12)).grid(row=1, column=0,columnspan=2,sticky = tk.W)
+    #frame_second_center=Frame(root,width=700,height =30)
+    #frame_second_center.grid(row=1, column=0,columnspan=20,padx=5)
+    tk.Label(root, text='Key word:',font=("Times New Roman",12)).place(x=5,y=30)
     key = tk.StringVar()
-    entry_key_word = tk.Entry(frame_second_center, width=70,textvariable=key)
-    entry_key_word.grid(row=1, column = 2,columnspan=6,padx=5)
+    entry_key_word = tk.Entry(root, width=50,textvariable=key)
+    entry_key_word.place(x=80,y=30)
     # Search button
-    btn_search = tk.Button(frame_second_center, text='Search', 
+    btn_search = tk.Button(root, text='Search', 
                           command=lambda: searchConduct(window,key))
-    btn_search.grid(row=1, column=8,padx=5)
+    btn_search.place(x=450,y=30)
     
     # Exit button
-    btn_exit = tk.Button(frame_second_center, text = 'Exit', width = 6,
+    btn_exit = tk.Button(root, text = 'Exit', width = 6,
                          command=lambda:exit_program(window))
-    btn_exit.grid(row=1, column=9)
+    btn_exit.place(x=500,y=30)
     
-    frame_first_center.grid_propagate(0)
-    frame_second_center.grid_propagate(0)
+    #frame_first_center.grid_propagate(0)
+    #frame_second_center.grid_propagate(0)
     
 # %% 
 if __name__ == "__main__":

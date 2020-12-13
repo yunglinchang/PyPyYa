@@ -75,11 +75,11 @@ python3 ./scripts/main.py
 /data/
 
 ## Data Source:
-* DataAnalyst.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
-* DataEngineer.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
-* DataScientist.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
-* Labor_statistics.csv: scraped from [U.S. Bureau of Labor Statistics](https://data.bls.gov/projections/nationalMatrix?queryParams=15-2098&ioType=o) using jobindustry_GUI.py
-* course_clean.csv: scraped from [Carnegie Mellon University - Schedule of Classes](https://enr-apps.as.cmu.edu/open/SOC/SOCServlet/search) using course_description.py and get_sched_table.py, and integrated with merge_xls.py
+* **DataAnalyst.csv**: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
+* **DataEngineer.csv**: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
+* **DataScientist.csv**: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
+* **Labor_statistics.csv**: scraped from [U.S. Bureau of Labor Statistics](https://data.bls.gov/projections/nationalMatrix?queryParams=15-2098&ioType=o) using jobindustry_GUI.py
+* **course_clean.csv**: scraped from [Carnegie Mellon University - Schedule of Classes](https://enr-apps.as.cmu.edu/open/SOC/SOCServlet/search) using course_description.py and get_sched_table.py, and integrated with merge_xls.py
 
 ## License
 MIT License
