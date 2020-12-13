@@ -85,17 +85,17 @@ python3 ./scripts/main.py
 
 
 ## Python file:
-* **course_description.py**: 
-* **Course_GUI.py**:
-* **get_sched_table.py**:
-* **jobindustry_GUI.py**:
-* **main.py**:
-* **merge_xls.py**:
+* **course_description.py**: Scrape course description data from Schedule of Classes(SOC).
+* **Course_GUI.py**: Provide user interface of PaPaYa.
+* **get_sched_table.py**: Scrape course schedule data from SOC.
+* **jobindustry_GUI.py**: Read data from job search csv file and scrap data from U.S. Labor Statisticts. Convert the data into bar/plot graph and Data Frame table. 
+* **main.py**: Main python file to execute all the other python files.
+* **merge_xls.py**: Merge course description and schedule data on course ID and integrate department information.
 
 ## License
 MIT License
 
-Copyright (c) [2020] [Yung-Lin Chang, Crystal Chen, Yumin Chen, Siqin Deng]
+Copyright (c) [2020] [Yung-Lin Chang, Yi-Wen Chen, Yumin Chen, Siqin Deng]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
