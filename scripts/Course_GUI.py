@@ -79,3 +79,5 @@ class course:
         for item in x:
             tree.delete(item)
 
+
+
