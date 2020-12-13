@@ -83,6 +83,14 @@ python3 ./scripts/main.py
 * **Labor_statistics.csv**: scraped from [U.S. Bureau of Labor Statistics](https://data.bls.gov/projections/nationalMatrix?queryParams=15-2098&ioType=o) using jobindustry_GUI.py
 * **course_clean.csv**: scraped from [Carnegie Mellon University - Schedule of Classes](https://enr-apps.as.cmu.edu/open/SOC/SOCServlet/search) using course_description.py and get_sched_table.py, and integrated with merge_xls.py
 
+## Python file:
+* course_description.py: Scrape course description data from Schedule of Classes(SOC).
+* Course_GUI.py: Provide user interface of PaPaYa.
+* get_sched_table.py: Scrape course schedule data from SOC.
+* jobindustry_GUI.py: Read data from job search csv file and scrap data from U.S. Labor Statisticts. Convert the data into bar/plot graph and Data Frame table.  
+* main.py: Main python file to execute all the other python files.
+* merge_xls.py: Merge course description and schedule data on course ID and integrate department information.
+
 ## License
 MIT License
 
