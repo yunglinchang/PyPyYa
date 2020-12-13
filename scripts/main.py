@@ -21,10 +21,14 @@ def searchConduct(root, key_word):
         "religion",
         "attorney",
         "status",
+        "employer",
         "employment",
         "opportunities",
+        "opportunity",
         "consideration",
-        "equal",
+        "origin",
+        "year",
+        "years" "equal",
     ]
     # Declare a jobindustry object
     j = jobindustry(p1, key, root)
@@ -44,7 +48,7 @@ def searchConduct(root, key_word):
     # Display the course search result
     c.selectCourse(result)
     # Display related industry prospect
-    j.nt_summary(root, phrase_df)
+    j.nt_summary(phrase_df)
 
 
 # %% main window layout

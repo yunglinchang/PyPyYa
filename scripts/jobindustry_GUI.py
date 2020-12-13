@@ -101,9 +101,6 @@ class jobindustry:
             ]
 
             table_.to_csv("./data/Labor_statistics.csv", index=False, header=header)
-
-        # print(table_)
-        # print(df)
         return df, table_
 
     # Process job information
@@ -194,10 +191,11 @@ class jobindustry:
         return new_table
 
     # Create the "Industry Tendency" table
-    @staticmethod
-    def nt_summary(root, new_table):
-        label5 = tk.Label(root, text="Industry Tendency")
-        label5.place(relx=0.5, rely=0.6)
+    def nt_summary(self, new_table):
+        label5 = tk.Label(
+            self.root, text="Industry Tendency", font=("Times New Roman", 14, "bold")
+        )
+        label5.place(relx=0.5, rely=0.64)
         nt_summary = new_table.groupby("Industry_title").mean()[
             [
                 "Projected 2029 Employment_y",
@@ -226,20 +224,20 @@ class jobindustry:
             "Employment % Change",
         )
         tree = ttk.Treeview(
-            root, height=10, show="headings", selectmode="browse", columns=columns
+            self.root, height=9, show="headings", selectmode="browse", columns=columns
         )
 
-        tree.column(columns[0], width=100)
-        tree.column(columns[1], width=50)
-        tree.column(columns[2], width=50)
-        tree.column(columns[3], width=50)
-        tree.column(columns[4], width=50)
-        tree.column(columns[5], width=50)
+        tree.column(columns[0], width=140)
+        tree.column(columns[1], width=42)
+        tree.column(columns[2], width=42)
+        tree.column(columns[3], width=42)
+        tree.column(columns[4], width=42)
+        tree.column(columns[5], width=42)
 
         for i in columns:
             tree.heading(i, text=i)
 
-        tree.place(relx=0.5, rely=0.63)
+        tree.place(relx=0.5, rely=0.67)
         # self.delButton(tree)
 
         i = 0
@@ -257,7 +255,7 @@ class jobindustry:
                     round(data[4], 1),
                 ),
             )
-            i = i + 1
+            i += 1
         return nt_summary
 
     # Search for job information that match the input key word
@@ -266,9 +264,12 @@ class jobindustry:
         return phrase_df
 
     # Create the bar plot
-    # @staticmethod
     def barplot_loc_sal(self, df):
-        label3 = tk.Label(self.root, text="Top 5 Location/Salary Estimate")
+        label3 = tk.Label(
+            self.root,
+            text="Top 5 Location/Salary Estimate",
+            font=("Times New Roman", 14, "bold"),
+        )
         label3.place(relx=0.02, rely=0.7)
         plot_df = (
             (
@@ -283,7 +284,8 @@ class jobindustry:
         )
         # figure = plt.figure(figsize=(5, 2.5))
         sns.barplot(x=plot_df.index, y=plot_df)
-        plt.xticks(rotation=5, fontsize=7)
+        plt.xticks(rotation=5, fontsize=8)
+        plt.yticks(fontsize=4.5)
         plt.xlabel("")
         plt.savefig("./demo/bar.jpg")
 
@@ -296,14 +298,12 @@ class jobindustry:
         label.image = photo
         label.place(relx=0.02, rely=0.73)
 
-        # canvas = FigureCanvasTkAgg(figure, master=root)
-        # canvas.get_tk_widget().place(x=10, y=460)
-
     # Create the distribution plot
-    # @staticmethod
     def distplot_salary(self, df):
         label2 = tk.Label(
-            self.root, text="Min (Blue) / Max (Red) Salary Estimate Distribution"
+            self.root,
+            text="Min (Blue) / Max (Red) Salary Estimate Distribution",
+            font=("Times New Roman", 14, "bold"),
         )
         label2.place(relx=0.02, rely=0.4)
         figure = plt.figure(figsize=(3.5, 1.5))
@@ -320,7 +320,9 @@ class jobindustry:
 
     # Create the word cloud
     def wordcloud_ngrams(self, df, other_stopwords: list = [], bg_color: str = "white"):
-        label1 = tk.Label(self.root, text="WordCloud")
+        label1 = tk.Label(
+            self.root, text="WordCloud", font=("Times New Roman", 14, "bold")
+        )
         label1.place(relx=0.02, rely=0.1)
 
         eng_stopwords = stopwords.words("english") + other_stopwords
@@ -361,5 +363,5 @@ class jobindustry:
         label = tk.Label(self.root, image=photo)
         # In case the image is recycled
         label.image = photo
-        label.place(relx=0.02, rely=0.13)
+        label.place(relx=0.02, rely=0.15)
 

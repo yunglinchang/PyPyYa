@@ -35,22 +35,24 @@ class course:
 
     # Get the search result and create the "Course" table
     def selectCourse(self, result):
-        label4 = tk.Label(self.root, text="Course")
+        label4 = tk.Label(
+            self.root, text="Course", font=("Times New Roman", 14, "bold")
+        )
         label4.place(relx=0.5, rely=0.1)
 
         var = tk.StringVar()
         textLabel = tk.Label(self.root, textvariable=var, fg="red")
-        textLabel.place(relx=0.65, rely=0.1)
+        textLabel.place(relx=0.62, rely=0.1)
 
         columns = ("Department", "Title", "Number", "Unit")
         tree = ttk.Treeview(
-            self.root, height=13, show="headings", selectmode="browse", columns=columns
+            self.root, height=17, show="headings", selectmode="browse", columns=columns
         )
 
-        tree.column(columns[0], width=125)
-        tree.column(columns[1], width=125)
-        tree.column(columns[2], width=50)
-        tree.column(columns[3], width=50)
+        tree.column(columns[0], width=75)
+        tree.column(columns[1], width=175)
+        tree.column(columns[2], width=55)
+        tree.column(columns[3], width=42)
 
         for i in columns:
             tree.heading(i, text=i)
