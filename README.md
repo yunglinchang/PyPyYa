@@ -24,14 +24,17 @@ Nowadays, students ranging from bachelors to more advanced degrees often face a 
 ├── data
 │   ├── DataAnalyst.csv           
 │   ├── DataEngineer.csv             
-│   ├── DataScientist.csv            
-│   └── csv
+│   ├── DataScientist.csv      
+│   ├── Labor_statistics.csv
+│   └── course_clean.csv
 ├── requirement.txt           
 └── scripts
     ├── course_description.py
     ├── Course_GUI.py
+    ├── get_sched_table.py
     ├── jobindustry_GUI.py
-    └── main.py
+    ├── main.py
+    └── merge_xls.py
 ```
 
 
@@ -68,3 +71,23 @@ conda install --yes --file requirements.txt
 ```
 python3 ./scripts/main.py
 ```
+
+Data:
+* DataAnalyst.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
+* DataEngineer.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
+* DataScientist.csv: job data from [picklesueat/data_jobs_data](https://github.com/picklesueat/data_jobs_data)
+* Labor_statistics.csv: scraped from [U.S. Bureau of Labor Statistics](https://data.bls.gov/projections/nationalMatrix?queryParams=15-2098&ioType=o) using jobindustry_GUI.py
+* course_clean.csv: scraped from [Carnegie Mellon University - Schedule of Classes](https://enr-apps.as.cmu.edu/open/SOC/SOCServlet/search) using course_description.py and get_sched_table.py, and integrated with merge_xls.py
+
+## License
+MIT License
+
+Copyright (c) [2020] [Yung-Lin Chang, Crystal Chen, Yumin Chen, Siqin Deng]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+You must write exactly ONE "README" file, submitted as a PDF, MS-Word, or .txt file, that gives us instructions on how to install and run your project, including installing any additional Python modules beyond what Anaconda provides; setting environment variables (please avoid if possible); obtaining an API key; or the like.  (If your project requires packages/modules other than what Anaconda provides, tell us what we need to do MANUALLY to install those: do not auto-install those within your project: it's too hard for us to un-install things that were auto-installed.)  Include the names and email addresses of all Group members in the "README" file. Give us screen shots to look at, when that would be helpful.  DO NOT write a "README" file that refers us to other "README" files elsewhere.  To repeat: ONE "README" file only, submitted as a PDF, MS-Word, or .txt file.
