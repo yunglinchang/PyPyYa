@@ -6,6 +6,7 @@ Nowadays, students ranging from bachelors to more advanced degrees often face a 
 **Introducing--PyPyYa!**
 
 ## Demo
+Video: https://youtu.be/SyYz-tfTMEI
 ![alt text](https://github.com/yunglinchang/PyPyYa/blob/master/demo/demo.jpg?raw=true)
 
 ## The Team--Group 10:
