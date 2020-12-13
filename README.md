@@ -6,7 +6,7 @@ Nowadays, students ranging from bachelors to more advanced degrees often face a 
 **Introducing--PyPyYa!**
 
 ## Demo
-![alt text](https://github.com/yunglinchang/PyPyYa/blob/master/demo.jpg?raw=true)
+![alt text](https://github.com/yunglinchang/PyPyYa/blob/master/demo/demo.jpg?raw=true)
 
 ## The Team--Group 10:
 * **CEO**: Jack Chang   |  yunglinc@andrew.cmu.edu
