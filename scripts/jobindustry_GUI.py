@@ -22,16 +22,20 @@ import warnings
 
 from PIL import Image
 from PIL import ImageTk
+import tkinter as tk
+from tkinter import ttk
+from tkinter import Canvas
+from tkinter import Frame
+from tkinter import Scrollbar
 
 class jobindustry:
-    def __init__(self, data_path, input_word,root):
+    def __init__(self, data_path, input_word):
         self.data_path = data_path
         self.input_word = input_word
-        self.root=root
     
     # Read job and industry data
     def read_data(self):
-        file_names = [f for f in os.listdir(str(self.data_path)) if f.endswith('.csv')]
+        file_names = [f for f in os.listdir(str(self.data_path)) if f.endswith('.csv') and f.startswith('Data')]
         df = pd.read_csv(file_names[0]).iloc[:,2:]
         for f in file_names[1:]:
             df_append = pd.read_csv(str(self.data_path + f))
@@ -197,7 +201,7 @@ class jobindustry:
     @staticmethod
     def wordcloud_ngrams(root, other_stopwords: list=[], bg_color: str='white'):
         label1 = tk.Label(root,text='Word Cloud')
-        label1.place(x=10,y=65)
+        label1.place(x=0,y=55)
         
         # If the word cloud picture already exists
         if os.path.isfile('Figure 2020-12-12 220447.png'):
@@ -209,7 +213,6 @@ class jobindustry:
             # In case the image is recycled
             label.image = photo     
             label.place(x=10,y=80)
-            graphTitle1.grid_propagate(0)
             
         # Otherwise, create the word cloud picture
         else:
