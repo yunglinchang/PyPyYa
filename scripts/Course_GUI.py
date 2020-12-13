@@ -4,12 +4,11 @@ import numpy as np
 import tkinter as tk
 from tkinter import ttk
 from tkinter import Canvas
-from tkinter import Frame
 from tkinter import Scrollbar
 
 # %% Course search
 class course:
-    def __init__(self, key_word, data_iath,root):
+    def __init__(self, key_word, data_path,root):
         self.key_word = key_word
         self.data_path = data_path
         self.root=root
@@ -32,16 +31,12 @@ class course:
     
     # Get the search result and create the "Course" table
     def selectCourse(self,result):
-        titleFrame = Frame(self.root,width=350,height=8)
-        titleFrame.grid(row=2,column=5,columnspan=2)
-        label4 = tk.Label(titleFrame,text='Course')
-        label4.grid(row=2,column=5,columnspan=2)
+        label4 = tk.Label(self.root,text='Course')
+        label4.place(x=370,y=55)
         
-        resultFrame=Frame(self.root,width=350,height=8)
-        resultFrame.grid(row=2,column=7,columnspan=3)
         var = tk.StringVar()
-        textLabel = tk.Label(resultFrame,textvariable=var,fg='red')
-        textLabel.grid(row=2,column = 7, columnspan=3,sticky = tk.NW)
+        textLabel = tk.Label(self.root,textvariable=var,fg='red')
+        textLabel.place(x=500,y=60)
     
         columns = ("Department", "Title", "Number", "Unit")
         tree = ttk.Treeview(self.root, height=13, show="headings", selectmode='browse', columns=columns)
